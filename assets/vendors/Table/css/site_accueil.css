@@ -1,0 +1,272 @@
+/* Mon CODE CSS*/
+
+/*Le corps de la page */
+
+body
+{
+	padding-top: 0px;
+	font-family:Arial;
+}
+p
+{
+    overflow: auto;
+    word-wrap: break-word;
+    text-align: justify;
+    text-indent: 4em;
+}
+
+/* Header*/
+
+/* La bannière fixe du haut et le menu*/
+
+
+.menu{
+	display: flex;
+	align-items: center;
+	color: white;
+	justify-content: space-between;
+}
+.navbar-links{
+	margin-left: 0px !important; 
+	display: flex;
+	position: static;
+}
+.navbar-links ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	float: right;
+	position: static;
+}
+.navbar-links li{
+	list-style: none;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 25px;
+	position: static;
+}
+.navbar-links li a{
+	text-decoration: none;
+	padding: 1rem;
+	display: block;
+	color: white !important;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-right: 10px; 
+	border-radius: 15px; 
+	transition: 0.5s;
+	margin: 0.6rem;
+}
+.navbar-links:hover li a{
+	transform: scale3d(1.);
+	opacity: .9;
+	filter: blur(2px);
+}
+.navbar-links li a:hover{
+	transform: scale3d(1);
+	opacity: 1;
+	filter: blur(0);
+	text-decoration: none;
+	color: white;
+	background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
+	background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+	background-image:         linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	background-repeat: repeat-x;
+	border-color: #3e8f3e;
+}
+/*.activation{
+	color: white;
+	background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
+	background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+	background-image:         linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	background-repeat: repeat-x;
+	border-color: #3e8f3e;
+	border-radius: 15px 15px 15px 15px;
+	font-size: 1.5em;
+}*/
+
+
+/* Menu pour mobile */
+
+
+/*#toggle-button, #btn{
+	position: absolute;
+	top: .90rem;
+	right: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 21px;
+	height: 21px;
+	color: white;
+}
+	*/
+/* Fin du Header */
+
+
+
+/* Le contenu  */
+
+	/* Nos réalisations */
+
+.entete_bloc_realisation{
+	position: relative; 
+	font-size: 1.8em; 
+	font-weight: bold; 
+	color: black;
+	border-bottom: 2px gray solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+/*.bloc_projet
+{
+	height: 285px;
+	margin: 3%;
+	background: rgba(0,0,0,0.8);
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 2px 2px 2px gray;
+	overflow: auto;
+}
+.bloc_projet .img_box
+{
+	width: 100%;
+	height: 150px; 
+	position: relative;
+	display: inline-block; 
+}
+.bloc_projet .img_box .image
+{
+	overflow: hidden;
+	position: relative;
+}
+.bloc_projet .img_box .image img
+{
+	width: 100%;
+	height: 150px;
+	transition:2s;
+}
+.bloc_projet .img_box:hover .image img
+{
+	transform: scale(1.2); 
+}
+.bloc_projet .img_box .sous-titre1 .p1
+{
+	color: white;
+	word-wrap: break-word;
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: bold; 
+	margin-top: 10px;
+	font-family: "Times New Roman","Comic Sans MS","Trebuchet MS",Serif;
+	padding: 2%;
+}
+.bloc_projet .img_box .sous-titre1 .p2
+{
+	color: gray;
+	font-size: 1em; 
+	word-wrap: break-word;
+	text-align: center;
+	font-family: "Comic Sans MS","Trebuchet MS","Times New Roman",Serif;
+}
+
+
+	/* Bloc des Statistiques */
+
+/*.bloc_statistique
+{
+	height: 150px;
+	margin: 2%;
+	background: white;
+	border:none;
+}
+.bloc_statistique h1
+{
+	margin-top: 5px;
+}
+.bloc_statistique .sous-titre1 .p1
+{
+	color: #5dc269;
+	word-wrap: break-word;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold; 
+	font-family: "Times New Roman","Comic Sans MS","Trebuchet MS",Serif;
+	border-bottom: 2px solid gray;
+}
+.bloc_statistique .sous-titre1 .p2
+{
+	color: black;
+	font-size: 1.2em; 
+	word-wrap: break-word;
+	text-align: center;
+	font-family: "Comic Sans MS","Trebuchet MS","Times New Roman",Serif;
+	padding-bottom: 10px;
+}
+
+/*  bloc des attouts */
+
+/*.bloc_attout
+{
+	height: 70px;
+	margin: 2%;
+	background: white;
+	border:none;
+	border-left: 2px solid gray;
+}
+.bloc_attout h2
+{
+	margin-top: 5px;
+}
+.bloc_attout .sous-titre1 .p1
+{
+	color: black;
+	word-wrap: break-word;
+	text-align: left;
+	font-size: 1.3em;
+	font-weight: bold; 
+	font-style: italic;
+	font-family: "Comic Sans MS","Trebuchet MS","Times New Roman",Serif;
+	margin-top: 5px;
+	padding-left: 3%;
+}
+
+/* Fin du Contenu */
+
+
+
+/* Footer */
+
+footer{
+	width: auto;
+	position: relative;
+	display: block;
+	background-color: #337238;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
+footer a
+{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover
+{
+	text-decoration: none;
+	color: white;
+	font-size: 1.3em;
+}
+
+/* Fin du footer */
+
+/* Fin du CSS*/			
